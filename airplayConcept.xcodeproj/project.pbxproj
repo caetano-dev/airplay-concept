@@ -11,6 +11,8 @@
 		EF4A29842AEECCE00068FA07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A29832AEECCE00068FA07 /* ContentView.swift */; };
 		EF4A29862AEECCE10068FA07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4A29852AEECCE10068FA07 /* Assets.xcassets */; };
 		EF4A29892AEECCE10068FA07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4A29882AEECCE10068FA07 /* Preview Assets.xcassets */; };
+		EF4A29922AEED2F20068FA07 /* SongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A29912AEED2F20068FA07 /* SongView.swift */; };
+		EF4A29942AEED6F50068FA07 /* MoveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A29932AEED6F50068FA07 /* MoveButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		EF4A29832AEECCE00068FA07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EF4A29852AEECCE10068FA07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF4A29882AEECCE10068FA07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF4A29912AEED2F20068FA07 /* SongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongView.swift; sourceTree = "<group>"; };
+		EF4A29932AEED6F50068FA07 /* MoveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		EF4A29802AEECCE00068FA07 /* airplayConcept */ = {
 			isa = PBXGroup;
 			children = (
-				EF4A29812AEECCE00068FA07 /* airplayConceptApp.swift */,
 				EF4A29832AEECCE00068FA07 /* ContentView.swift */,
+				EF4A29932AEED6F50068FA07 /* MoveButton.swift */,
+				EF4A29912AEED2F20068FA07 /* SongView.swift */,
+				EF4A29812AEECCE00068FA07 /* airplayConceptApp.swift */,
 				EF4A29852AEECCE10068FA07 /* Assets.xcassets */,
 				EF4A29872AEECCE10068FA07 /* Preview Content */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF4A29922AEED2F20068FA07 /* SongView.swift in Sources */,
 				EF4A29842AEECCE00068FA07 /* ContentView.swift in Sources */,
+				EF4A29942AEED6F50068FA07 /* MoveButton.swift in Sources */,
 				EF4A29822AEECCE00068FA07 /* airplayConceptApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
