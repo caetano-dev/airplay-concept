@@ -34,7 +34,7 @@ struct DevicesListView: View {
                 Text("Speakers and TV's")
                     .fontWeight(.semibold)
                     .foregroundStyle(Color.white)
-                    .padding(.horizontal)
+                    .padding(.horizontal, 20)
                 Spacer()
             }
             .background(Color("BackgroundColor"))
@@ -80,9 +80,12 @@ struct DevicesListView: View {
                 .onAppear(perform: {
                     UITableView.appearance().contentInset.top = -45
                 })
+                .scaledToFit()
                 
             }.background(Color("BackgroundColor"))
         }}
 #Preview {
     DevicesListView()
+    .padding(.horizontal, 10)
+    .scrollContentBackground(.hidden)
 }
