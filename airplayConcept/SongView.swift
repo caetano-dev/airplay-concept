@@ -17,8 +17,10 @@ struct SongView: View {
             VStack (alignment: .leading){
                 Text("Stressed Out")
                     .fontWeight(.bold)
+                    .foregroundStyle(Color.white)
                 Text("Twenty One Pilots")
                     .font(.subheadline)
+                    .foregroundStyle(Color.white).opacity(0.8)
             }
             .padding(5)
             
@@ -29,7 +31,7 @@ struct SongView: View {
                     .foregroundColor(.white)
             }
             .padding(5)
-            .background(Color.red)
+            .background(Color.accentColor)
             .clipShape(Circle())
             
             Button(action: {
@@ -39,10 +41,11 @@ struct SongView: View {
                     .foregroundColor(.white)
             }
             .padding(12)
-            .background(Color.red)
+            .background(Color.accentColor)
             .clipShape(Circle())
         }
         .frame(maxWidth: .infinity)
+        .background(Color("BackgroundColor"))
         
     }
 }

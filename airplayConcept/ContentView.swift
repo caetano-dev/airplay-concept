@@ -28,19 +28,19 @@ struct ContentView: View {
     ]
     
     var body: some View {
-        SharedBackgroundColorView{
             VStack{
                 SongView()
                 MoveButton()
                     .frame(height: 140)
-                    .background(Color("BackgroundColor"))
                 
                 HStack{
                     Text("Speakers and TV's")
-                        .colorInvert()
+                        .fontWeight(.semibold)
+                        .foregroundStyle(Color.white)
                     Spacer()
                 }
                 .padding(.horizontal, 20)
+                .background(Color("BackgroundColor"))
                 
             }
             List(devices) { device in
@@ -49,15 +49,17 @@ struct ContentView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 35, height: 35) 
-                        .foregroundColor(.gray)
+                        .foregroundStyle(Color.white)
                         .padding(.trailing, 3)
                     
                     VStack(alignment: .leading, spacing: 4) {
                         Text(device.location)
-                            .fontWeight(.medium)
+                            .fontWeight(.semibold)
+                            .foregroundStyle(Color.white)
                         
                         Text("\(device.song) - \(device.artist)")
-                            .foregroundColor(.gray)
+                            .font(.subheadline)
+                            .foregroundStyle(Color.white)
                             .lineLimit(1)
                             .truncationMode(.tail)
                     }
@@ -66,11 +68,11 @@ struct ContentView: View {
                     
                     if device.selected {
                         Image(systemName: "checkmark.circle.fill")
-                            .foregroundColor(.green)
+                            .foregroundStyle(Color.white)
                             .font(.title2)
                     } else {
                         Image(systemName: "circle")
-                            .foregroundColor(.gray)
+                            .foregroundStyle(Color.white)
                             .font(.title2)
                     }
                 }
@@ -81,10 +83,10 @@ struct ContentView: View {
             
         }
         
-    }
 }
 #Preview {
     ContentView()
+        .background(Color("BackgroundColor"))
         
 }
 
