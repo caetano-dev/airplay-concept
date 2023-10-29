@@ -14,6 +14,7 @@
 		EF4A29922AEED2F20068FA07 /* SongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A29912AEED2F20068FA07 /* SongView.swift */; };
 		EF4A29942AEED6F50068FA07 /* MoveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A29932AEED6F50068FA07 /* MoveButton.swift */; };
 		EF96D0A62AEF02BE00721196 /* SharedBackgroundColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96D0A52AEF02BE00721196 /* SharedBackgroundColorView.swift */; };
+		EF96D0A82AEF0CD700721196 /* DevicesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96D0A72AEF0CD700721196 /* DevicesListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		EF4A29912AEED2F20068FA07 /* SongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongView.swift; sourceTree = "<group>"; };
 		EF4A29932AEED6F50068FA07 /* MoveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveButton.swift; sourceTree = "<group>"; };
 		EF96D0A52AEF02BE00721196 /* SharedBackgroundColorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedBackgroundColorView.swift; sourceTree = "<group>"; };
+		EF96D0A72AEF0CD700721196 /* DevicesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				EF4A29832AEECCE00068FA07 /* ContentView.swift */,
+				EF96D0A72AEF0CD700721196 /* DevicesListView.swift */,
 				EF4A29932AEED6F50068FA07 /* MoveButton.swift */,
 				EF4A29912AEED2F20068FA07 /* SongView.swift */,
 				EF4A29812AEECCE00068FA07 /* airplayConceptApp.swift */,
@@ -151,6 +154,7 @@
 				EF4A29842AEECCE00068FA07 /* ContentView.swift in Sources */,
 				EF4A29942AEED6F50068FA07 /* MoveButton.swift in Sources */,
 				EF4A29822AEECCE00068FA07 /* airplayConceptApp.swift in Sources */,
+				EF96D0A82AEF0CD700721196 /* DevicesListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
