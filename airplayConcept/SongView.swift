@@ -22,7 +22,7 @@ struct SongView: View {
                     .font(.subheadline)
                     .foregroundStyle(Color.white).opacity(0.8)
             }
-            .padding(5)
+            .padding(15)
             
             Button(action: {
                 // Add your action here

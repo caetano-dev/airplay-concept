@@ -14,7 +14,6 @@ struct Device: Identifiable, Equatable, Hashable {
     var selected: Bool
     var song: String
     var artist: String
-    
 }
 
 struct DevicesListView: View {
@@ -84,6 +83,7 @@ struct DevicesListView: View {
                 
             }.background(Color("BackgroundColor"))
         }}
+
 #Preview {
     DevicesListView()
     .padding(.horizontal, 10)

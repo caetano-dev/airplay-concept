@@ -16,11 +16,12 @@ struct ContentView: View {
                 .frame(height: 100)
             
             DevicesListView()
-                .padding(.horizontal, 10)
+                .padding(.horizontal, 13)
                 .scrollContentBackground(.hidden)
                 .offset(CGSize(width: 0, height: -30.0))
             PlayButtonsView()
             VolumeSlider()
+            OptionButtons()
                
                 
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
