@@ -16,6 +16,8 @@
 		EF96D0A62AEF02BE00721196 /* SharedBackgroundColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96D0A52AEF02BE00721196 /* SharedBackgroundColorView.swift */; };
 		EF96D0A82AEF0CD700721196 /* DevicesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96D0A72AEF0CD700721196 /* DevicesListView.swift */; };
 		EF96D0AA2AEF199E00721196 /* PlayButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96D0A92AEF199E00721196 /* PlayButtonsView.swift */; };
+		EF96D0AC2AEF1F1500721196 /* VolumeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96D0AB2AEF1F1500721196 /* VolumeSlider.swift */; };
+		EF96D0AE2AEF21D500721196 /* OptionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96D0AD2AEF21D500721196 /* OptionButtons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		EF96D0A52AEF02BE00721196 /* SharedBackgroundColorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedBackgroundColorView.swift; sourceTree = "<group>"; };
 		EF96D0A72AEF0CD700721196 /* DevicesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesListView.swift; sourceTree = "<group>"; };
 		EF96D0A92AEF199E00721196 /* PlayButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButtonsView.swift; sourceTree = "<group>"; };
+		EF96D0AB2AEF1F1500721196 /* VolumeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSlider.swift; sourceTree = "<group>"; };
+		EF96D0AD2AEF21D500721196 /* OptionButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionButtons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				EF4A29832AEECCE00068FA07 /* ContentView.swift */,
+				EF96D0AD2AEF21D500721196 /* OptionButtons.swift */,
 				EF96D0A92AEF199E00721196 /* PlayButtonsView.swift */,
 				EF96D0A72AEF0CD700721196 /* DevicesListView.swift */,
 				EF4A29932AEED6F50068FA07 /* MoveButton.swift */,
@@ -70,6 +75,7 @@
 				EF4A29852AEECCE10068FA07 /* Assets.xcassets */,
 				EF96D0A52AEF02BE00721196 /* SharedBackgroundColorView.swift */,
 				EF4A29872AEECCE10068FA07 /* Preview Content */,
+				EF96D0AB2AEF1F1500721196 /* VolumeSlider.swift */,
 			);
 			path = airplayConcept;
 			sourceTree = "<group>";
@@ -152,6 +158,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF96D0AC2AEF1F1500721196 /* VolumeSlider.swift in Sources */,
+				EF96D0AE2AEF21D500721196 /* OptionButtons.swift in Sources */,
 				EF96D0A62AEF02BE00721196 /* SharedBackgroundColorView.swift in Sources */,
 				EF4A29922AEED2F20068FA07 /* SongView.swift in Sources */,
 				EF96D0AA2AEF199E00721196 /* PlayButtonsView.swift in Sources */,

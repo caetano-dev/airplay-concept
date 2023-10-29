@@ -30,6 +30,7 @@ struct PlayButtonsView: View {
                 .foregroundStyle(Color.white)
             Spacer()
         }
+        .frame(maxWidth: .infinity)
     }
 }
 

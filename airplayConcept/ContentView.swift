@@ -20,11 +20,13 @@ struct ContentView: View {
                 .scrollContentBackground(.hidden)
                 .offset(CGSize(width: 0, height: -30.0))
             PlayButtonsView()
-                .frame(maxWidth: .infinity)
+            VolumeSlider()
+               
+                
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
     }
-    
 }
+
 #Preview {
     ContentView()
         .background(Color("BackgroundColor"))
