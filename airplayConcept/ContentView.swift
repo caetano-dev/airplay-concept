@@ -28,80 +28,64 @@ struct ContentView: View {
     ]
     
     var body: some View {
-        VStack{
-            SongView()
-            MoveButton()
-                .frame(height: 140)
-            
-            HStack{
-                Text("Speakers and TV's")
-                Spacer()
+        SharedBackgroundColorView{
+            VStack{
+                SongView()
+                MoveButton()
+                    .frame(height: 140)
+                    .background(Color("BackgroundColor"))
+                
+                HStack{
+                    Text("Speakers and TV's")
+                        .colorInvert()
+                    Spacer()
+                }
+                .padding(.horizontal, 20)
+                
             }
-            .padding(.horizontal, 20)
-                
-        }
-        List(devices) { device in
-            HStack(alignment: .center) {
-                Image(systemName: device.name)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 35, height: 35) // Set a fixed size for the images
-                    .foregroundColor(.gray)
-                    .padding(.trailing, 3)
-                
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(device.location)
-                        .fontWeight(.medium)
+            List(devices) { device in
+                HStack(alignment: .center) {
+                    Image(systemName: device.name)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 35, height: 35) 
+                        .foregroundColor(.gray)
+                        .padding(.trailing, 3)
                     
-                    Text("\(device.song) - \(device.artist)")
-                        .foregroundColor(.gray)
-                        .lineLimit(1)
-                        .truncationMode(.tail)
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(device.location)
+                            .fontWeight(.medium)
+                        
+                        Text("\(device.song) - \(device.artist)")
+                            .foregroundColor(.gray)
+                            .lineLimit(1)
+                            .truncationMode(.tail)
+                    }
+                    
+                    Spacer()
+                    
+                    if device.selected {
+                        Image(systemName: "checkmark.circle.fill")
+                            .foregroundColor(.green)
+                            .font(.title2)
+                    } else {
+                        Image(systemName: "circle")
+                            .foregroundColor(.gray)
+                            .font(.title2)
+                    }
                 }
+                .padding(.trailing, 10)
+                .listRowBackground(Color.accentColor)
                 
-                Spacer()
-                
-                if device.selected {
-                    Image(systemName: "checkmark.circle.fill")
-                        .foregroundColor(.green)
-                        .font(.title2)
-                } else {
-                    Image(systemName: "circle")
-                        .foregroundColor(.gray)
-                        .font(.title2)
-                }
             }
-            .padding(.trailing, 10)
-            .background(
-                LinearGradient(
-                    gradient: Gradient(stops: [
-                        .init(color: .clear, location: 0.7),
-                        .init(color: .white, location: 1.0)
-                    ]),
-                    startPoint: .top,
-                    endPoint: .bottom
-                )
-            )
+            
         }
-
-
+        
     }
-    
 }
 #Preview {
     ContentView()
-        .background(
-            LinearGradient(
-                gradient: Gradient(stops: [
-                    .init(color: Color(red: 135/255, green: 64/255, blue: 84/255), location: 0.0),
-                    .init(color: Color(red: 141/255, green: 76/255, blue: 81/255), location: 1.0)
-                ]),
-                startPoint: .top,
-                endPoint: .bottom
-            )
-            
-        )
-    //135,64,84 until 141 76 81
+        
 }
 
 
