@@ -15,27 +15,20 @@ struct ContentView: View {
         VStack{
             SongView()
             MoveButton()
-                .frame(height: 140)
-            
-            HStack{
-                Text("Speakers and TV's")
-                    .fontWeight(.semibold)
-                    .foregroundStyle(Color.white)
-                Spacer()
-            }
-            .padding(.horizontal, 20)
-            .background(Color("BackgroundColor"))
+                .frame(height: 100)
+           
             DevicesListView()
-            .padding(.horizontal, 10)
+                .padding(.horizontal, 10)
                 .scrollContentBackground(.hidden)
+                .offset(CGSize(width: 0, height: -30.0))
         }
     }
-        
+    
 }
 #Preview {
     ContentView()
         .background(Color("BackgroundColor"))
-        
+    
 }
 
 

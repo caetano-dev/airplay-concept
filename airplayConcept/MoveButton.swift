@@ -24,7 +24,7 @@ struct MoveButton: View {
         .padding(30)
         .background(Color("BackgroundColor"))
     }
-        
+    
 }
 #Preview {
     MoveButton()
