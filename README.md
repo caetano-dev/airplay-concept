@@ -10,6 +10,6 @@ You can access the original post [here](https://x.com/hiddecollee7/status/171727
 
 ## App Screenshot
 
-![screenshot](./.github/screenshot.png)
+<img src="./.github/screenshot.png" alt="app screenshot" width="300"/>
 
-My implementations is still not pixel perfect, but this was an great opportunity to learn new tricks.
+My implementations is still not pixel perfect, but this was a great opportunity to learn new tricks.
